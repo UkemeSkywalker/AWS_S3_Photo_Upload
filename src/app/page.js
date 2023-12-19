@@ -11,7 +11,7 @@ export default function Home() {
 
           <div className='flex-auto w-1/2'>
           <div class="search pt-5 px-10 ">
-            <input className="h-10 w-full " type="text" id="search-input"  placeholder="Search..." />
+            <input className="h-10 w-full rounded-lg" type="text" id="search-input"  placeholder="Search..." />
            
           </div>
           </div>
