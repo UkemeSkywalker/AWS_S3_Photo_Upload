@@ -3,5 +3,8 @@
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  "include": [
+    "src/**/*.mjs"
+, "src/ui/components/search-bar.js"  ]
 }
