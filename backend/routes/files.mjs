@@ -111,7 +111,7 @@ router.get("/recent", (req, res) => {
   
 })
 
-// Get file based on type
+// Get file based on type api/vi/files/type/:audio
 router.get('/type/:type', (req, res) => {
 
   const fileType = req.params.type;
