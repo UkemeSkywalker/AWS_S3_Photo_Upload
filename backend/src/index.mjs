@@ -15,5 +15,5 @@ app.listen(PORT, (req, res) => {
 app.use(express.json());
 app.use(express.urlencoded())
 
-app.use("/api/vi", path)
+app.use("/api/vi/files", path)
 
