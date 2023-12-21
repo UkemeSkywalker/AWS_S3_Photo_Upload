@@ -1,44 +1,28 @@
 import { FaCamera, FaPlusCircle, FaDownload, FaUpload } from 'react-icons/fa';
-import { IoIosPerson } from "react-icons/io";
 import { AiFillAudio } from "react-icons/ai";
 import { FaVideo, FaBoxArchive } from "react-icons/fa6";
-import { IoDocumentTextSharp, IoPersonSharp, IoSchool, IoSettings, IoLogOut } from "react-icons/io5";
-import { RiAccountPinCircleFill } from "react-icons/ri";
+import { IoDocumentTextSharp, IoPersonSharp, IoSchool } from "react-icons/io5";
 import { MdOutlineWork } from "react-icons/md";
 
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-row">
-          <div className='flex-auto w-1/8 sidebar pt-10 flex-col bg-blue-800 text-white '>
-            <div className=" flex justify-center items-center p-6 m-6 text-5xl bg-white rounded-full ">
-              < IoIosPerson className='text-blue-300 '  />
+          <div className='flex-auto w-1/6 sidebar pt-10 px-4 flex-col'>
+            <div className=" avatar justify-center items-center">
             </div>
-            <div className=" flex flex-row items-center gap-2 bg-blue-900 h-10 mt-4 p-3"> 
-              <RiAccountPinCircleFill />
-              <h3>My Cloud</h3>
-            </div>
-
-            <div className=' '>
-              <div className="pt-10 flex flex-row items-center gap-2 p-3"> 
-                < IoSettings />
-                <h3>Settings</h3>
-              </div>
-              <div className="pt-2 flex flex-row items-center gap-2 p-3"> 
-                < IoLogOut />
-                <h3>Logout</h3>
-              </div>
-            </div>
-
+            <div className="pt-10"> My Cloud</div>
+            <div className="pt-10"> Settings</div>
+            <div className="pt-2"> Logout </div>
           </div>
 
-          <div className='flex-auto px-10 w-2/3 feeds'>
+          <div className='flex-auto px-10 w-1/2 feeds'>
             <div class="search pt-5 ">
               <input className="h-10 w-full rounded-full px-5" type="text" id="search-input"  placeholder="Search..." />
             </div>
             <div className="pt-5"> 
               <h2 className="font-black text-blue-800">Categories</h2>
-              <div className="flex flex-row gap-2 pt-7">
+              <div className="flex flex-row justify-between pt-7">
                 <div className="p-5 rounded-lg text-white bg-fuchsia-500 ">
                   < IoDocumentTextSharp />
                   <h3>Document</h3>

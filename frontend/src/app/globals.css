@@ -29,6 +29,10 @@ body {
 
 /*  Sidebar content */
 
+.sidebar {
+  background-color: #4F41E0;
+}
+
 .avatar {
   width: 100px;
   height: 100px;
