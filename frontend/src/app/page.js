@@ -1,28 +1,38 @@
 import { FaCamera, FaPlusCircle, FaDownload, FaUpload } from 'react-icons/fa';
 import { AiFillAudio } from "react-icons/ai";
-import { FaVideo, FaBoxArchive } from "react-icons/fa6";
-import { IoDocumentTextSharp, IoPersonSharp, IoSchool } from "react-icons/io5";
+import { FaVideo, FaBoxArchive, FaHouseLock  } from "react-icons/fa6";
+import { IoLogOut , IoDocumentTextSharp, IoPersonSharp, IoSchool, IoSettingsSharp } from "react-icons/io5";
 import { MdOutlineWork } from "react-icons/md";
+import { IoIosPerson } from "react-icons/io";
+
 
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-row">
-          <div className='flex-auto w-1/6 sidebar pt-10 px-4 flex-col'>
-            <div className=" avatar justify-center items-center">
+          <div className='flex-auto w-1/8 sidebar pt-10 flex-col text-white '>
+            < IoIosPerson  className=' text-8xl bg-white text-gray-300 justify-center items-center rounded-full m-6 '/>
+            <div className="bg-blue-900 p-3 gap-2 flex flex-row justify-left items-center"> 
+              < FaHouseLock />
+              <a href='#'>My Cloud </a>
             </div>
-            <div className="pt-10"> My Cloud</div>
-            <div className="pt-10"> Settings</div>
-            <div className="pt-2"> Logout </div>
+            <div className="p-3 gap-2 flex flex-row justify-left items-center"> 
+              < IoSettingsSharp /> 
+              <a href = "#">Settings</a>
+            </div>
+            <div className="p-3 gap-2 flex flex-row justify-left items-center"> 
+            < IoLogOut />
+            <a href="#">Logout </a> 
+            </div>
           </div>
 
-          <div className='flex-auto px-10 w-1/2 feeds'>
+          <div className='flex-auto px-10 w-2/3 feeds'>
             <div class="search pt-5 ">
               <input className="h-10 w-full rounded-full px-5" type="text" id="search-input"  placeholder="Search..." />
             </div>
             <div className="pt-5"> 
               <h2 className="font-black text-blue-800">Categories</h2>
-              <div className="flex flex-row justify-between pt-7">
+              <div className="flex flex-row gap-4 pt-7">
                 <div className="p-5 rounded-lg text-white bg-fuchsia-500 ">
                   < IoDocumentTextSharp />
                   <h3>Document</h3>
@@ -82,8 +92,8 @@ export default function Home() {
 
               <div className="flex flex-col mt-2 p-2 rounded-md recent-files-list bg-white">
                 <div className="flex flex-row justify-between">
-                  <div className='flex flex-row gap-2'>
-                    <FaCamera className='' />
+                  <div className='flex flex-row gap-2 justify-left items-center'>
+                    <FaCamera className='  text-yellow-500' />
                     <h3> IMG_12340</h3>
                   	</div>
     	            <h3>png</h3>
@@ -94,8 +104,8 @@ export default function Home() {
 
               <div className="flex flex-col mt-2 p-2 rounded-md recent-files-list bg-white">
                 <div className="flex flex-row justify-between">
-                  <div className='flex flex-row gap-2'>
-                    <IoDocumentTextSharp className='' />
+                  <div className='flex flex-row gap-2 justify-left items-center'>
+                    <IoDocumentTextSharp className='text-fuchsia-600' />
                     <h3> IMG_12340</h3>
                   	</div>
     	            <h3>pdf</h3>
@@ -108,7 +118,7 @@ export default function Home() {
             </div>
 
           </div>
-          <div className='flex-auto w-1/4 bg-white p-10 flex flex-col items-center'>
+          <div className='upload-box flex-auto w-1/4 bg-white p-10 flex flex-col items-center'>
 
             <div className='upload w-full flex flex-col p-20 rounded-lg justify-center  items-center bg-gray-100'>
               <FaUpload className='text-4xl  text-blue-500' />
