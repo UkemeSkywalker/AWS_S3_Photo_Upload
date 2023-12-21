@@ -97,7 +97,7 @@ const files = [
 ]
 
 
-// get all files
+// get all files.
 router.get("/", (req, res) => {
     res.send(files)
 })
